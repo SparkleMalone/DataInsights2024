@@ -17,3 +17,20 @@ vr <- rbind( group1_vr, group2_vr) # combine all groups into a single file:
 
 # figures:
 library( ggplot2)
+
+setwd('/Users/sm3466/YSE Dropbox/Yale-Myers MODs/YMF MODs 2024/Materials related to general MODs/Data Insights/DataInsights2024/data/Exercise2')
+test <- read.csv("comp_old_data.csv" )
+
+names(test)
+
+library(ggplot2)
+library(tidyverse)
+test$Value <- as.numeric(test$Value)
+
+test %>% filter(Variable == "Total Basal area") %>%  ggplot(aes(x= Group, y=Value)) + geom_point(alpha=0.5) +
+  theme(axis.text.x = element_text(angle=25, hjust = 1,
+                                   size = 12)) + facet_wrap(facet = vars(Week)) + ylab("Total Basal area")
+test %>% filter(Variable == "Coarse Woody Material") %>%  ggplot(aes(x= Group, y=Value )) + geom_point(alpha=0.5) +
+  theme(axis.text.x = element_text(angle=25, hjust = 1,
+                                   size = 12)) + facet_wrap(facet = vars(Week)) + ylab("Coarse Woody Material")
+
