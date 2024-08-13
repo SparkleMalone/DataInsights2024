@@ -1,0 +1,145 @@
+Tree_number,Tree_species,Variable,Instrument,Value
+6,NA,Height,Clinometer,8
+6,NA,DBH,Biltmore stick,21
+6,NA,DBH,Diameter tape,21
+6,NA,Height,Staff hypsometer,13
+6,NA,DBH,Calipers,19.8
+3,NA,DBH,Calipers,20.8
+3,NA,Height,Clinometer,20.28
+3,NA,DBH,Diameter tape,21.6
+3,NA,Height,Staff hypsometer,15.5
+3,NA,DBH,Biltmore stick,21
+2,NA,DBH,Diameter tape,32.8
+2,NA,DBH,Clinometer,13.3
+2,NA,Height,Staff hypsometer,22
+2,NA,DBH,Biltmore stick,33
+2,NA,DBH,Calipers,12.45
+11,NA,Height,Clinometer,20.06
+11,NA,DBH,Biltmore stick,27
+11,NA,DBH,Calipers,27.8
+11,NA,DBH,Diameter tape,29.3
+11,NA,NA,NA,NA
+3,white ash (Fraxinus americana),DBH,Biltmore stick,22.125
+3,white ash (Fraxinus americana),Height,Clinometer,21
+12,red oak (Quercus rubra),DBH,Calipers,29.7
+12,red oak (Quercus rubra),Height,Staff hypsometer,17
+4,eastern hemlock (Tsuga canadensis),DBH,Calipers,45
+4,eastern hemlock (Tsuga canadensis),Height,Staff hypsometer,13
+5,eastern hemlock (Tsuga canadensis),DBH,Calipers,29.5275
+5,eastern hemlock (Tsuga canadensis),DBH,Diameter tape,31.5
+5,eastern hemlock (Tsuga canadensis),DBH,Biltmore stick,30
+5,eastern hemlock (Tsuga canadensis),Height,Staff hypsometer,13
+5,eastern hemlock (Tsuga canadensis),Height,Clinometer,11.05
+10,sugar maple (Acer saccharum),DBH,Diameter tape,19.3
+10,sugar maple (Acer saccharum),DBH,Calipers,17.9
+10,sugar maple (Acer saccharum),Height,Staff hypsometer,18.4
+10,sugar maple (Acer saccharum),DBH,Biltmore stick,20
+10,sugar maple (Acer saccharum),Height,Clinometer,20
+1,eastern white pine (Pinus strobus),Height,Staff hypsometer,22.9
+1,eastern white pine (Pinus strobus),DBH,Diameter tape,37.4
+1,eastern white pine (Pinus strobus),DBH,Biltmore stick,35
+1,eastern white pine (Pinus strobus),Height,Calipers,35.56
+1,eastern white pine (Pinus strobus),HEIGHT,Clinometer,26.3
+9,shagbark hickory (Carya ovata),DBH,Calipers,40.894
+9,shagbark hickory (Carya ovata),DBH,Biltmore stick,37.5
+9,shagbark hickory (Carya ovata),HEIGHT,Staff hypsometer,15.6
+9,shagbark hickory (Carya ovata),Height,Clinometer,20.7
+9,shagbark hickory (Carya ovata),DBH,Diameter tape,42.5
+1,eastern white pine (Pinus strobus),DBH,Biltmore stick,36
+1,eastern white pine (Pinus strobus),Height,Staff hypsometer,24.6
+1,eastern white pine (Pinus strobus),DBH,Calipers,14.3
+1,eastern white pine (Pinus strobus),DBH,Diameter tape,37.3
+NA,NA,NA,NA,NA
+7,red maple (Acer rubrum),DBH,Calipers,20.95
+7,red maple (Acer rubrum),DBH,Biltmore stick,25
+7,red maple (Acer rubrum),Height,Staff hypsometer,20.1
+7,red maple (Acer rubrum),DBH,Diameter tape,24.5
+NA,NA,NA,NA,NA
+9,shagbark hickory (Carya ovata),DBH,Diameter tape,42.7
+9,shagbark hickory (Carya ovata),DBH,Biltmore stick,35.2
+9,shagbark hickory (Carya ovata),DBH,Calipers,40.64
+9,shagbark hickory (Carya ovata),Height,Staff hypsometer,85
+NA,NA,NA,NA,NA
+6,sugar maple (Acer saccharum),DBH,Diameter tape,20.7
+6,sugar maple (Acer saccharum),DBH,Calipers,18.28
+6,sugar maple (Acer saccharum),DBH,Biltmore stick,18.3
+6,sugar maple (Acer saccharum),Height,Clinometer,12.1
+6,sugar maple (Acer saccharum),Height,Staff hypsometer,16
+NA,NA,NA,NA,NA
+12,red oak (Quercus rubra),NA,Calipers,30.2
+12,red oak (Quercus rubra),NA,Diameter tape,30.1
+12,red oak (Quercus rubra),NA,Staff hypsometer,18.1
+12,red oak (Quercus rubra),NA,Clinometer,18.24
+12,red oak (Quercus rubra),NA,Biltmore stick,30
+6,sugar maple (Acer saccharum),DBH,Calipers,12.7
+3,white ash (Fraxinus americana),DBH,Diameter tape,21.7
+12,red oak (Quercus rubra),DBH,Biltmore stick,33
+3,white ash (Fraxinus americana),Height,Staff hypsometer,30.52
+4,eastern hemlock (Tsuga canadensis),DBH,Calipers,38.1
+10,sugar maple (Acer saccharum),Dbh,Diameter tape,19.1
+10,sugar maple (Acer saccharum),Height,Staff hypsometer,21.5
+10,sugar maple (Acer saccharum),DBH,Clinometer,24.84
+10,sugar maple (Acer saccharum),DBH,Calipers,19.05
+2,American beech (Fagus grandifolia),DBH,Calipers,30.48
+2,American beech (Fagus grandifolia),DBH,Diameter tape,33.95
+2,American beech (Fagus grandifolia),Height,Clinometer,8.54
+7,red oak (Quercus rubra),DBH,Diameter tape,24
+7,red oak (Quercus rubra),Height,Staff hypsometer,17
+7,red oak (Quercus rubra),Height,Clinometer,21.12
+7,red oak (Quercus rubra),DBH,Biltmore stick,27
+11,white ash (Fraxinus americana),DBH,Calipers,28.19
+11,white ash (Fraxinus americana),DBH,Diameter tape,29
+11,white ash (Fraxinus americana),Height,Clinometer,NA
+11,white ash (Fraxinus americana),DBH,Biltmore stick,30
+13,red oak (Quercus rubra),DBH,Diameter tape,42
+13,red oak (Quercus rubra),DBH,Calipers,30.1
+13,red oak (Quercus rubra),Height,Clinometer,31.29
+7,red maple (Acer rubrum),DBH,Diameter tape,25
+7,red maple (Acer rubrum),DBH,Calipers,9.33
+7,red maple (Acer rubrum),DBH,Biltmore stick,25
+9,shagbark hickory (Carya ovata),DBH,Diameter tape,43.2
+9,shagbark hickory (Carya ovata),DBH,Biltmore stick,44
+8,black birch (Betula lenta),DBH,Biltmore stick,20
+8,black birch (Betula lenta),DBH,Diameter tape,20.2
+8,black birch (Betula lenta),DBH,Calipers,7.6
+4,eastern hemlock (Tsuga canadensis),DBH,Calipers,14.8
+4,eastern hemlock (Tsuga canadensis),DBH,Biltmore stick,39
+4,eastern hemlock (Tsuga canadensis),DBH,Diameter tape,39.2
+3,white ash (Fraxinus americana),DBH,Calipers,8.1
+3,white ash (Fraxinus americana),DBH,Diameter tape,21.5
+3,white ash (Fraxinus americana),DBH,Biltmore stick,NA
+9,shagbark hickory (Carya ovata),DBH,Diameter tape,42.3
+9,shagbark hickory (Carya ovata),DBH,Calipers,41.275
+9,shagbark hickory (Carya ovata),DBH,Biltmore stick,42
+9,shagbark hickory (Carya ovata),Height,Staff hypsometer,7
+9,shagbark hickory (Carya ovata),Height,Clinometer,4.8
+11,white ash (Fraxinus americana),DBH,Calipers,28
+11,white ash (Fraxinus americana),DBH,Diameter tape,29
+11,white ash (Fraxinus americana),DBH,Biltmore stick,25
+11,white ash (Fraxinus americana),Height,Staff hypsometer,22.2
+11,white ash (Fraxinus americana),Height,Clinometer,6.003
+12,red oak (Quercus rubra),DBH,Diameter tape,31
+12,red oak (Quercus rubra),DBH,Biltmore stick,32.5
+12,red oak (Quercus rubra),DBH,Calipers,30.48
+12,red oak (Quercus rubra),Height,Staff hypsometer,16.86
+12,red oak (Quercus rubra),Height,Clinometer,18.467
+4,eastern hemlock (Tsuga canadensis),DBH,Diameter tape,39
+4,eastern hemlock (Tsuga canadensis),DBH,Biltmore stick,44
+4,eastern hemlock (Tsuga canadensis),DBH,Calipers,38.35
+4,eastern hemlock (Tsuga canadensis),Height,Staff hypsometer,NA
+4,eastern hemlock (Tsuga canadensis),Height,Clinometer,8.2
+1,eastern white pine (Pinus strobus),DBH,Diameter tape,37.2
+1,eastern white pine (Pinus strobus),DBH,Calipers,35.6
+1,eastern white pine (Pinus strobus),Height,Clinometer,25.65
+1,eastern white pine (Pinus strobus),Height,Staff hypsometer,26
+1,eastern white pine (Pinus strobus),Height,Staff hypsometer,NA
+2,black birch (Betula lenta),Height,Clinometer,24.92
+2,black birch (Betula lenta),DBH,Diameter tape,33
+2,black birch (Betula lenta),DBH,Calipers,31
+2,black birch (Betula lenta),Height,Biltmore stick,NA
+2,black birch (Betula lenta),Height,Staff hypsometer,NA
+3,red oak (Quercus rubra),DBH,Biltmore stick,40
+3,red oak (Quercus rubra),DBH,Diameter tape,41
+3,red oak (Quercus rubra),DBH,Calipers,38.1
+3,red oak (Quercus rubra),Height,Staff hypsometer,19
+3,red oak (Quercus rubra),Height,Clinometer,16.4
