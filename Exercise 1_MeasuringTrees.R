@@ -107,3 +107,7 @@ png(file="Height_TreesSamples.png",
     width=600, height=500)
 ggarrange(plot.Height)
 dev.off()
+
+# Summary Stats
+library(tidyverse)
+ex1b.sd <- ex1b %>% group_by(Instrument, Variable) %>% summarise(Value = sd(Value, na.rm=T))
