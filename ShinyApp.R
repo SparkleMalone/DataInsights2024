@@ -23,7 +23,8 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  data <- eventReactive(input$generate, {
+  data <- reactive({
+    set.seed(123)
     rnorm(10000, mean = input$mean, sd = sqrt(input$variance))
   })
   

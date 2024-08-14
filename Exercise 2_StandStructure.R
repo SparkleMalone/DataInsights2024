@@ -1,36 +1,62 @@
 # Measuring Standing Trees: We will demonstrate how to use each instrument in the field. Before submitting your data to Canvas, remember to convert all measurements to metric. 
 
 library("readxl")
+library(ggpubr)
 
-wd <- getwd()
-setwd(paste(wd,'/data/Exercise2', sep=""))
+setwd('/Users/sm3466/YSE Dropbox/Yale-Myers MODs/YMF MODs 2024/Materials related to general MODs/Data Insights/DataInsights2024/data/Exercise2/Edited')
+files <- list.files( pattern= ".xls")
 
+library(tidyverse)
 # There will be multiple files 
-group1_fp <- read_excel("Field Excercise 2 Datasheet.xlsx", sheet = "Worksheet Standing Trees", skip=9, n_max =2)
 
-group1_vr <- read_excel("Field Excercise 2 Datasheet.xlsx", sheet = "Worksheet Standing Trees", skip=19, n_max =2)
+compile.group <- function(files ){
+  group1_fp <- read_excel(files, sheet = "Worksheet Standing Trees", skip=9, n_max =2)[2,] %>% select(`Group Number`, `Live BA (m2/ha)`) %>% mutate(Type = "Fixed")
+  group1_vr <- read_excel(files, sheet = "Worksheet Standing Trees", skip=19, n_max =2)[2,]%>% select(`Group Number`, `Live BA (m2/ha)`) %>% mutate(Type = "Variable")
+  group.data <- rbind(group1_fp, group1_vr )
+  return(group.data)
+}
 
-# Example for how to merge all files
-fp <- rbind( group1_fp, group2_fp) # combine all groups into a single file:
+group1 <- compile.group(files = files[1])
+group2 <- compile.group(files = files[2]) %>% mutate(`Group Number` = 4)
+group3 <- compile.group(files = files[3])
+group4 <- compile.group(files = files[4])%>% mutate(`Group Number` = '4a')
+group5 <- compile.group(files = files[5])
+group6 <- compile.group(files = files[6])
+group7 <- compile.group(files = files[7])
 
-vr <- rbind( group1_vr, group2_vr) # combine all groups into a single file:
+all.groups <- rbind(group1, group2, group3,group4,group4, group5)
 
-# figures:
-library( ggplot2)
-
-setwd('/Users/sm3466/YSE Dropbox/Yale-Myers MODs/YMF MODs 2024/Materials related to general MODs/Data Insights/DataInsights2024/data/Exercise2')
-test <- read.csv("comp_old_data.csv" )
-
-names(test)
 
 library(ggplot2)
 library(tidyverse)
-test$Value <- as.numeric(test$Value)
 
-test %>% filter(Variable == "Total Basal area") %>%  ggplot(aes(x= Group, y=Value)) + geom_point(alpha=0.5) +
-  theme(axis.text.x = element_text(angle=25, hjust = 1,
-                                   size = 12)) + facet_wrap(facet = vars(Week)) + ylab("Total Basal area")
-test %>% filter(Variable == "Coarse Woody Material") %>%  ggplot(aes(x= Group, y=Value )) + geom_point(alpha=0.5) +
-  theme(axis.text.x = element_text(angle=25, hjust = 1,
-                                   size = 12)) + facet_wrap(facet = vars(Week)) + ylab("Coarse Woody Material")
+Week1.Plota <- all.groups %>%  ggplot(aes(x= Type, y=`Live BA (m2/ha)`)) + 
+  geom_point(alpha=0.5, size=3) + theme(text = element_text(size=25))  + 
+  ylab("Total Basal area (m2/ha)") + geom_hline(yintercept=50,  color='red', size=1) +xlab("Method") + theme_bw()
 
+Week1.Plota.final <- Week1.Plota + 
+  stat_summary(fun.data=mean_sdl, 
+               fun.args = list(mult=1),
+               geom="errorbar", color="blue", width=0.2) + 
+  stat_summary(fun.y=mean, geom="point", color="blue")
+
+png(file="Basal_Area.png",
+    width=500, height=500)
+
+
+dev.off()
+
+Week1.Plota <- all.groups %>%  ggplot(aes(x= Type, y=`Live BA (m2/ha)`)) + 
+  geom_point(alpha=0.5, size=3) + theme(text = element_text(size=25))  + 
+  ylab("Total Basal area (m2/ha)") +xlab("Method") + theme_bw()
+
+Week1.Plota.final <- Week1.Plota + 
+  stat_summary(fun.data=mean_sdl, 
+               fun.args = list(mult=1),
+               geom="errorbar", color="blue", width=0.2) + 
+  stat_summary(fun.y=mean, geom="point", color="blue")
+
+png(file="Basal_Area_NoLine.png",
+    width=500, height=500)
+Week1.Plota.final
+dev.off()
